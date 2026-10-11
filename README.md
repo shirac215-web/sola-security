@@ -51,7 +51,7 @@ I designed and built the **WhatsApp Bot Service**, the entry point that connects
 
 - **Meta WhatsApp Cloud API integration** — webhook verification, receiving incoming messages, and sending replies through the Graph API
 - **Service orchestration** — calls the Auth, STT and Report services over REST and returns a response to the user in the chat
--**Text and voice handling** — text goes straight to the Report Service; voice notes are downloaded from Meta and sent to the Speech-to-Text Service first
+- **Text and voice handling** — text goes straight to the Report Service; voice notes are downloaded from Meta and sent to the Speech-to-Text Service first
 - **Multilingual replies** — detects the language of the incoming message and answers in the same language
 - **Message tracking** — logs every incoming message and its handling status (`PENDING` → done/failed) in Supabase, using a repository layer
 - **Deployment** — configured the service for Render (`render.yaml`) and fixed production build issues
